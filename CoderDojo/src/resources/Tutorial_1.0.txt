@@ -1,0 +1,51 @@
+Java Tutorial 1.0 - Arrays, Loops & Random Numbers
+==================================================
+
+- create several numeric variables
+
+- create int array
+--- method 1
+----- set initial size
+----- populate each element
+--- method 2
+----- initialise array with declaration
+
+- create arrays of type:
+--- float
+--- boolean
+--- String
+
+- iterate through array & display values
+--- using for loop
+--- using for each loop
+
+- create Random int
+- create random int within given range
+- create method that takes min & max parameters and returns random int in specified range
+- create method that takes min, max & length parameters and returns array of random ints in specified range
+
+- create HigherLower class
+- design game to guess if next value is higher or lower than previous
+- create array of random numbers
+- loop through array, display current number & ask user to input H or L
+- win if user guesses correctly
+- end game upon incorrect guess
+- for win/fail offer user to play again Y/N
+
+
+- create class Card
+- add member fields for rank & suit
+- add constructor
+- add toString that converts high ranks to facecard initials, e.g. 11 -> J, 12 -> Q
+- add validation to constructor?
+- add enum for suits
+
+- create class HigherLowerCard
+- add method to create card with random rank & suit
+- add method to create array of random cards
+- loop through array, display current card & ask user to input H or L
+- win if user guesses correctly
+- end game upon incorrect guess
+- for win/fail offer user to play again Y/N
+
+- design Pontoon game
