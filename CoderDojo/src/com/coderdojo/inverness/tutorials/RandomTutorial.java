@@ -3,10 +3,12 @@ package com.coderdojo.inverness.tutorials;
 import java.util.Random;
 
 public class RandomTutorial {
+	
+	private static Random random = new Random();
 
 	public static void main(String[] args) {
 		
-		int min = 0, max = 5;
+		int min = 0, max = 100;
 		
 //		for(int index = 0; index < 5; index++)
 //		{
@@ -22,8 +24,6 @@ public class RandomTutorial {
 	
 	public static int getRandom(int min, int max) {
 		
-		Random random = new Random();
-		
 		return random.nextInt(max - min) + min + 1;
 	}
 	
@@ -31,12 +31,25 @@ public class RandomTutorial {
 	
 	public static int[] getRandomArray(int min, int max, int length) {
 		
-		Random random = new Random();
 		int[] array = new int[length];
 		
 		for (int index = 0; index < length; index++)
 		{
 			array[index] = random.nextInt(max - min) + min + 1;
+		}
+		return array;
+	}
+	
+	public static int[] getRandomArrayWithNoDuplicates(int min, int max, int length) {
+		
+		int[] array = new int[length];
+		
+		for (int index = 0; index < length; index++)
+		{
+			array[index] = random.nextInt(max - min) + min + 1;
+			if (index > 0 && array[index] == array[index - 1]) {
+				index--; // repeat loop iteration
+			}
 		}
 		return array;
 	}
